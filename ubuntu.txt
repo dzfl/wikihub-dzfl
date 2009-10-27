@@ -1,0 +1,12 @@
+*memo
+
+**ext3->ext4
++ sudo tune2fs -j /dev/DEV
++ sudo tune2fs -O extents,uninit_bg,dir_index /dev/DEV
++ sudo e2fsck -fpDC0 /dev/DEV
+
++ sudo vim /etc/fstab
++ /ext3/ext4/
+
+
+
